@@ -52,3 +52,12 @@ Substitute *AA:BB:CC:DD:EE:FF* with the device's MAC address.
 To measure the ambient light with an external sensor a light dependant resistor (LDR) is used. Connect the LDR to the MetaWear board according to the provided schematics and read the vlaues from GPIO 0 pin.
 ![Connect external LDR to MetaWear C](ambient_light_layout.png?raw=true "LDR Schematics")
 The actual values depend on the used resistor, on the LDR and on the applied voltage. For the case of MetaWear C the voltage is `V=3[V]`. The values can also be converted to [lux] (https://en.wikipedia.org/wiki/Lux) using [these] (http://emant.com/316002.page) instructions.
+
+====
+### Resources
+* https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction
+* https://learn.adafruit.com/bluefruit-le-python-library/overview
+* http://www.bluez.org/
+* http://emant.com/316002.page
+* https://mbientlab.com/metawear/
+* https://mbientlab.com/docs/MetaWearCPSv0.5.pdf
