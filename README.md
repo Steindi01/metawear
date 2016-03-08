@@ -48,6 +48,15 @@ Substitute *AA:BB:CC:DD:EE:FF* with the device's MAC address.
   Characteristic value/descriptor: 04 81 00 ca 00
   ```
 
+## Connect using [pygatt] (https://github.com/peplin/pygatt)
+1. Install `pygatt`
+  ```
+  sudo pip install pygatt
+  sudo pip install pexpect
+  ```
+  
+2. Change MAC address in `pygatt_example.py` and run the script with `python pygatt_example.py`
+
 ## Ambient Light Sensor
 To measure the ambient light with an external sensor a light dependant resistor (LDR) is used. Connect the LDR to the MetaWear board according to the provided schematics and read the vlaues from GPIO 0 pin.
 ![Connect external LDR to MetaWear C](ambient_light_layout.png?raw=true "LDR Schematics")
@@ -61,3 +70,4 @@ The actual values depend on the used resistor, on the LDR and on the applied vol
 * http://emant.com/316002.page
 * https://mbientlab.com/metawear/
 * https://mbientlab.com/docs/MetaWearCPSv0.5.pdf
+* https://github.com/peplin/pygatt
